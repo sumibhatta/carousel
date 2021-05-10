@@ -1,0 +1,27 @@
+#heading {
+    color: #2978b5;
+    text-align: center;
+    margin-top: 2rem;
+    font-size:xxx-large;
+}
+
+#carousel-container{
+    width: 95%;
+    padding: 20px 0 0 20px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.imag{
+    width: 100%;
+    flex: 0 0 auto;
+    transition: 500ms ease-in;
+}
+
+.active{
+    background-color: #fff;
+}
