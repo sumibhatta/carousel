@@ -1,13 +1,13 @@
 #heading {
     color: #2978b5;
     text-align: center;
-    margin-top: 2rem;
-    font-size:xxx-large;
+    margin-top: 1rem;
+    font-size:1.25rem;
 }
 
 #carousel-container{
     width: 95%;
-    padding: 20px 0 0 20px;
+    margin: 5px auto;
 }
 
 .images{

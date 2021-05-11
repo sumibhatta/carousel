@@ -1,9 +1,18 @@
-#left-arrow:hover, #right-arrow:hover, #dots:hover{
+#left-arrow:hover,
+#right-arrow:hover,
+#dots:hover {
     cursor: pointer;
 }
-
-#dots{
-    position: absolute;
-top: 33rem;
-left: 28rem;
+#left-arrow:hover,
+#right-arrow:hover{
+    background-color: #fff !important;
+    color: black !important;
 }
+
+#dots {
+    position: relative;
+    margin: 0 auto;
+    display: table;
+    top: -43px;
+}
+
