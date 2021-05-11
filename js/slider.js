@@ -36,8 +36,8 @@ leftArrow.style.color = "#fff"
 rightArrow.style.color = "#fff"
 rightArrow.style.borderRadius = "50%"
 leftArrow.style.borderRadius = "50%"
-rightArrow.style.padding = "6px 11px 7px 14px"
-leftArrow.style.padding = "6px 11px 7px 14px"
+rightArrow.style.padding = "9px 16px"
+leftArrow.style.padding = "9px 16px"
 
 
 //stylying dots
