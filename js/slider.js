@@ -79,10 +79,10 @@ rightArrow.onclick = () => {
         moveby = 0;
         control = 0;
     }
-    // console.log('after',control)
+    console.log('after',control)
     slides.forEach(e => {
         e.style.transform = "translateX(-" + moveby + "%)";
-        // console.log(e.style.transform);
+        console.log(e.style.transform);
 
     });
     // for(let i=0; i<circleForDots.length; i++){
@@ -107,10 +107,10 @@ leftArrow.onclick = () => {
         moveby -= 100;
         control -= 1;
     }
-    // console.log('after',control)
+    console.log('after',control)
     slides.forEach(e => {
         e.style.transform = "translateX(-" + moveby + "%)";
-        // console.log(e.style.transform);
+        console.log(e.style.transform);
     });
 
     circleForDots.forEach(circ => {
@@ -123,5 +123,20 @@ leftArrow.onclick = () => {
 
 
 
-
+for (let i = 0; i < circleForDots.length; i++) {
+    dots.childNodes[i].onclick = () => {
+         circleForDots.forEach(circ => {
+             circ.classList.remove('active')
+         })
+         circleForDots[i].classList.add('active')
+         moveby = 100*i;
+         control = i;
+         console.log(moveby);
+         slides.forEach(e => {
+            e.style.transform = "translateX(-" + moveby + "%)";
+            console.log(e.style.transform);
+        });
+    
+     }
+ }
 
