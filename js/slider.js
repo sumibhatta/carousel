@@ -2,9 +2,7 @@ let leftArrow = document.getElementById('left-arrow'); //left-arrow
 let rightArrow = document.getElementById('right-arrow'); //right-arrow
 let dots = document.getElementById('dots'); //dots
 let activeSlide = document.querySelector('.active');
-let slides = document.querySelectorAll('.imag');
-
-
+// let slides = document.querySelectorAll('.imag');
 
 //Adding contents
 leftArrow.innerText = "<";
@@ -82,9 +80,9 @@ setInterval(() => {
     // console.log(moveby);
     slides.forEach(e => {
         e.style.transform = "translateX(-" + moveby + "%)";
-        console.log(e.style.transform);
+        // console.log(e.style.transform);
     })
-    console.log(control)
+    // console.log(control)
     circleForDots.forEach(circ => {
         circ.classList.remove('active')
     })
@@ -166,4 +164,4 @@ setInterval(() => {
 
         }
     }
-}, 3000);
+}, holdValue);
